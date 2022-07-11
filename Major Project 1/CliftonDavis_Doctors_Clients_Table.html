@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EM"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="EN" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title> Clients and Doctors Table</title>
+</head>
+
+<body>
+<h1>A list of Patients Illness and Assigned Doctors</h1><br /><br /><br /><br />
+
+<form  method = "post" action = "CdavisMajor1connectdata.php " >
+    <table>
+		<tr>
+			<th>Patients Id</th><th>Patient First Name</th><th>Patient Last Name</th><th>Patient Illness</th><th>Assigned Doctor</th>
+		</tr>
+		<tr>	
+			<td><input name="patient_Id" type="text" id="patient_Id"></td>
+				
+			<td><input name="patient_firstname" type="text" id="patient_firstname"></td>
+					
+			<td><input name="patient_lastname" type="text" id="patient_lastname"></td>
+					
+			<td><select size="1" name="patient_Illness" id="patient_Illness">
+				<option selected="selected" >Select the Patient Illness</option>
+				<option value="feet issues">feet issues</option>
+				<option value="chest pains">chest pains</option>
+				<option value="depression">depression</option>
+				<option value="headaches">headaches</option>
+				<option value="psychosis">psychosis</option>
+				</select>
+				</td>
+					
+			<td><input name="doctor_Id" type="text" id="doctor_Id"></td>
+		</tr>
+		<tr>
+		<input type="submit" />  <button type="reset" value="Reset">Reset</button><br /><br /><br /><br />
+	</tr>
+    </table>
+	
+</form> 
+
+</body>
+</html>		

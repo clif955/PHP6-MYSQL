@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EM"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="EN" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title> Hospital Empolyee Information</title>
+</head>
+
+<body>
+<h1>Employee Information</h1>
+<form  method = "post" action = "viewEmployee.php " >
+    <table>
+		<tr>
+			<th>Employee's Id</th>
+			<td><input name="employeeID" type="text" id="employeeID"></td>
+			</tr>
+			<tr>
+			<th>Employee's First Name</th>	
+			<td><input name="employeeFirstName" type="text" id="employeeFirstName"></td>
+			</tr>
+			<tr>
+			<th>Employee's Last Name</th>		
+			<td><input name="employeeLastName" type="text" id="employeeLastName"></td>
+			</tr>
+			<tr>
+			<th>Employee's Phone Number</th>		
+			<td><input name="employeePhone" type="text" id="employeePhone"></td>
+			</tr>
+			<tr>
+			<th>Address</th>	
+			<td><input name="employeeAddress" type="text" id="employeeAddress"></td>
+			</tr>
+			<tr>
+			<th>Insurance Information</th>		
+			<td><input name="employeeInsurance" type="text" id="employeeInsurance"></td>
+			</tr>
+			<tr>
+			<th>Job Title</th>		
+			<td><select size="1" name="employeeJobTitle" id="employeeJobTitle">
+				<option selected="selected" >Select Your Job Title</option>
+				<option value="doctor">Doctor</option>
+				<option value="nurse">Nurse</option>
+				<option value="nurseA">Nurse Assistance</option>
+				<option value="other">Other Hospital Staff</option>
+				<option value="contractor">Contractor</option>
+				</select>
+				</td>
+			</tr>
+			<tr>	
+			<th>Specialities</th>	
+			<td><input name="employeeSpecialities" type="text" id="employeeSpecialities"></td>
+			</td>
+		</tr>
+		<tr>
+			<th>Degrees</th>
+			<td><input name="employeeDegrees" type="text" id="employeeDegrees"></td>
+			</tr>
+		<tr>
+		<input type="submit" />  <button type="reset" value="Reset">Reset</button>	<button type="update" value="update" onclick="window.location.href='model.php'">Up Date Information</button> <br /><br /><br />
+	</tr>
+    </table>
+	
+</form> 
+
+</body>
+</html>		

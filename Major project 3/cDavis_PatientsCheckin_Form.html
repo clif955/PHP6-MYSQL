@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EM"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="EN" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Check-In </title>
+</head>
+
+<body>
+<h1>Patients Check-in Form</h1>
+<form  method = "post" action = "viewpatient.php " >
+    <table>
+		<tr>
+			<th>Patient's Id</th>
+			<td><input name="patientID" type="text" id="patientID"></td>
+			</tr>
+			<tr>
+			<th>Patient First Name</th>	
+			<td><input name="patientFirstName" type="text" id="patientFirstName"></td>
+			</tr>
+			<tr>
+			<th>Patient Last Name</th>		
+			<td><input name="patientLastName" type="text" id="patientLastName"></td>
+			</tr>
+			<tr>
+			<th>Patient Phone Number</th>		
+			<td><input name="patientPhone" type="text" id="patientPhone"></td>
+			</tr>
+			<tr>
+			<th>Address</th>	
+			<td><input name="patientAddress" type="text" id="patientAddress"></td>
+			</tr>
+			<tr>
+			<th>Insurance Information</th><br />		
+			<td><input name="patientInsurance" type="text" id="patientInsurance"></td>
+			</tr>
+			<tr>
+			<th>Patient Illness</th>		
+			<td><select size="1" name="patientIllness" id="patientIllness">
+				<option selected="selected" >Select the Patient Illness</option>
+				<option value="sickness">Morning Sickness</option>
+				<option value="pains">Routine Visit</option>
+				<option value="vomiting">Excessive Vomiting</option>
+				<option value="headaches">headaches</option>
+				<option value="delivery">Delivery Time</option>
+				</select>
+				</td>
+			</tr>
+			<tr>	
+			<th>Assigned Doctor</th>	
+			<td><select size="1" name="doctorName"  id="doctorName">
+				<option selected="selected" >Select the Patient's Doctor</option>
+				<option value="johnson">Johnson</option>
+				<option value="lumpkin">Lumpkin</option>
+				<option value="jenkins">Jenkins</option>
+				<option value="kevorkian">Kevorkian</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th>Doctor's Id</th>
+			<td><input name="doctorID" type="text" id="doctorID"></td>
+			</tr>
+		<tr>
+		<input type="submit" />  <button type="reset" value="Reset">Reset</button> <button type="update" value="update" onclick="window.location.href='model.php'">Up Date Information</button> <br /><br /><br />
+	</tr>
+    </table>
+	
+</form> 
+
+</body>
+</html>		
